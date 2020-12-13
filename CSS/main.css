@@ -11,7 +11,7 @@ html {
   "about store . gmail image menu sign-in";
 }
 
-a {
+a, p {
   text-decoration: none;
   color: rgb(0,0,0,0.87);
   font-size: 13px;
@@ -50,6 +50,90 @@ a {
 
 #sign-in {
   grid-area: sign-in;
+  justify-self: center;
+  align-self: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 70px 70px 250px;
+  grid-template-areas:
+  ". logo ."
+  ". search-field ."
+  ". flexbox ."
+  ". offered-in .";
+}
+
+#logo {
+  grid-area: logo;
+  justify-self: center;
+  align-self: end;
+}
+
+.search-field {
+  grid-area: search-field;
+  height: 30px;
+  align-self: center;
+
+}
+
+.flexbox {
+  display: flexbox;
+  grid-area: flexbox;
+  justify-self: center;
+  align-self: center;
+}
+
+#offered-in{
+  grid-area: offered-in;
+  justify-self: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+  grid-template-rows: 50px;
+  grid-template-areas:
+  "advertising business how-search-works . privacy tos settings";
+}
+
+#advertising {
+  grid-area: advertising;
+  justify-self: center;
+  align-self: center;
+}
+
+#business {
+  grid-area: business;
+  justify-self: center;
+  align-self: center;
+}
+
+#how-search-works {
+  grid-area: how-search-works;
+  justify-self: center;
+  align-self: center;
+}
+
+#privacy {
+  grid-area: privacy;
+  justify-self: center;
+  align-self: center;
+}
+
+#tos {
+  grid-area: tos;
+  justify-self: center;
+  align-self: center;
+}
+
+#settings {
+  grid-area: settings;
   justify-self: center;
   align-self: center;
 }
